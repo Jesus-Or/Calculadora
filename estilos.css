@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f8f9fa, #0a19e7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #343a40;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo de la pantalla */
+.pantalla {
+    width: 300px;
+    height: 60px;
+    background: #212529;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+
+/* Botones */
+button {
+    background: #495057;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #6c757d;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background: #adb5bd;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Botones específicos */
+/* Botones específicos */
+#limpiar {
+    background: #dc3545;
+}
+
+#limpiar:hover {
+    background: #c82333;
+}
+
+#igual {
+    background: #28a745;
+    grid-column: span 2;
+}
+
+#igual:hover {
+    background: #218838;
+}
+
+#dividir,
+#multiplicar,
+#restar,
+#sumar,
+#dividir { /* Incluye el botón dividir aquí */
+    background: #ffc107;
+    color: #343a40;
+}
+
+#porcentaje:hover,
+#multiplicar:hover,
+#restar:hover,
+#sumar:hover,
+#dividir:hover { /* Incluye el botón dividir aquí */
+    background: #e0a800;
+}
